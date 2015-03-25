@@ -21,6 +21,10 @@ int main()
 	*/
 	// for loop
 	// for(initial condition; end condition)
+	for(i=0;i<=10;i=i+1)
+	{
+		x[i] = cos(M_PI*2*i/10); // 整數運算仍為整數,除非先用double [try]: cos(2*i/10*M_PI) 
+	}
 	for (i=0;i<8)
 	{
 		u[i]=x[i]+x[i+1]+x[i+2];
