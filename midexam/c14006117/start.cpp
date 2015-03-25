@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <math.h>
+int youth_problem(int n, int K);
+int university_problem(int n, int K);
 int main()
 {
 	//註解
@@ -24,7 +26,7 @@ int main()
 	for(i=0;i<=10;i=i+1)
 	{
 		x[i] = cos(M_PI*2*i/10); // 整數運算仍為整數,除非先用double [try]: cos(2*i/10*M_PI) 
-		printf("x[%d]=%f\n",i,x[i]); 
+		//printf("x[%d]=%f\n",i,x[i]);
 	}
 	for (i=0;i<8;i=i+1)
 	{
@@ -35,6 +37,7 @@ int main()
 			 [0 1 1 1 0 ... 0] x [1] 
 	*/
 	// 以上是baby problem 
+	int university_problem(int n, int K);
 	return 0;  
 }
 
@@ -73,6 +76,7 @@ int youth_problem(int n, int K) //副程式
 		}
 		u[i] = u[i]/K;
 	}
+	return 0;
 }
 
 int university_problem(int n, int K)//簡化加法
@@ -113,7 +117,9 @@ int university_problem(int n, int K)//簡化加法
 	for (i=1;i<=n-K;i=i+1)
 	{
 		u[i] = u[i-1] + ( x[k+i-1]-x[i-1] )/K;
+		printf("%d = %f\n",i,u[i]);
 	} 
+	
 	return 0;
 } 
  
