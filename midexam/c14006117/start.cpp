@@ -16,7 +16,7 @@ int main()
 	/* u[0] = (x[0]+x[1]+x[2])/3 
 	   u[1] = (x[1]+x[2]+x[3])/3
 	   ...
-	   In programm, we need to give a general form:
+	   In program, we need to give a general form:
 	   u[i] = (x[i]+x[i+1]+x[i+2])/3
 	   ...
 	   u[?] = (x[7]+x[8]+x[9])/3
@@ -37,7 +37,7 @@ int main()
 			 [0 1 1 1 0 ... 0] x [1] 
 	*/
 	// 以上是baby problem 
-	int university_problem(int n, int K);
+	university_problem(30,5);
 	return 0;  
 }
 
@@ -117,8 +117,8 @@ int university_problem(int n, int K)//簡化加法
 	for (i=1;i<=n-K;i=i+1)
 	{
 		u[i] = u[i-1] + ( x[k+i-1]-x[i-1] )/K;
-		printf("%d = %f\n",i,u[i]);
 	} 
+
 	
 	return 0;
 } 
