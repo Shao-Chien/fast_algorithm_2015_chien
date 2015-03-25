@@ -3,8 +3,7 @@
 int youth_problem(int n, int K);
 int university_problem(int n, int K);
 int main()
-{
-	//註解
+{	//註解
 	/*註解們
 	註解們
 	*/
